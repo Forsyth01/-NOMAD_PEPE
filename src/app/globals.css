@@ -8,7 +8,6 @@
 
 html {
   scroll-behavior: smooth;
-  
 }
 
 h1,
@@ -16,6 +15,10 @@ h2,
 .lucky,
 h3 {
   font-family: "Luckiest Guy", cursive;
+}
+
+a, button{
+  cursor: pointer;
 }
 
 body {

@@ -7,13 +7,16 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import ParallaxSection from './components/ParallaxSection';
-import Tokenomics from './components/Tokenomics';
 import Roadmap from './components/Roadmap';
 import Community from './components/Community';
 import Footer from './components/Footer';
 import Marquee from './components/MarqueeSection';
 import FaqSection from './components/FaqSection';
 import HowToBuy from './components/HowToBuy';
+import BuyUsingJupiter from './components/BuyUsingJupiter';
+import Nomadnomics from './components/Nomadnomics';
+import NomadBadge from './components/NomadBadge';
+import ExpeditionSection from './components/ExpeditionSection';
 
 export default function Home() {
   useEffect(() => {
@@ -47,9 +50,12 @@ export default function Home() {
       <Hero />
       <Marquee />
       <HowToBuy/>
+      <BuyUsingJupiter/>
+      <Nomadnomics />
+      <ExpeditionSection/>
       <FaqSection/>
+      <NomadBadge/>
       {/* <ParallaxSection /> */}
-      {/* <Tokenomics /> */}
       {/* <Roadmap /> */}
       {/* <Community /> */}
       <Footer />
