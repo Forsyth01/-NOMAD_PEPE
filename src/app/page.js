@@ -51,10 +51,10 @@ export default function Home() {
       <Marquee />
       <HowToBuy/>
       {/* <BuyUsingJupiter/> */}
-      <Nomadnomics />
-      <ExpeditionSection/>
+      {/* <Nomadnomics /> */}
+      {/* <ExpeditionSection/> */}
       <FaqSection/>
-      <NomadBadge/>
+      {/* <NomadBadge/> */}
       {/* <ParallaxSection /> */}
       {/* <Roadmap /> */}
       {/* <Community /> */}
