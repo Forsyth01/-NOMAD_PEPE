@@ -63,12 +63,14 @@ export default function HowToBuy() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        
         alignItems: "center",
         justifyContent: "center",
       }}
     >
+    
       <motion.section 
-        className="lg:grid grid-cols-2 pb-6"
+        className="lg:grid grid-cols-2 pb-6 "
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -76,9 +78,10 @@ export default function HowToBuy() {
         {/* Left Image */}
         <motion.div
           variants={slideLeftVariants}
-          className="hidden lg:flex flex-col justify-end"
+          className="hidden lg:flex  flex-col justify-end"
         >
           <motion.div
+            className=""
             animate={{ 
               y: [0, -10, 0],
             }}
@@ -92,8 +95,8 @@ export default function HowToBuy() {
               src="/nomad_beach.png"
               alt="Nomad Beach"
               width={500}
-              height={500}
-              className="object-contain w-[300px] sm:w-[400px] lg:w-[600px] xl:w-[880px] relative"
+            height={500}
+            className="object-contain w-[300px] sm:w-[400px] lg:w-[600px] xl:w-[880px] relative"
               quality={100}
               priority
             />
@@ -103,7 +106,7 @@ export default function HowToBuy() {
         {/* Right Image */}
         <motion.div
           variants={slideRightVariants}
-          className="flex-1 flex flex-col items-center justify-center text-center"
+          className="flex-1 flex flex-col items-center justify-center text-center "
         >
           <motion.div
             animate={{ 
@@ -120,41 +123,30 @@ export default function HowToBuy() {
               alt="How to Buy"
               width={500}
               height={500}
-              className="object-contain w-[437px] h-[507px] sm:w-[400px] lg:w-[600px] xl:w-[880px] lg:relative right-20"
+              className="object-contain w-[437px] h-[507px sm:w-[400px] lg:w-[600px] xl:w-[880px] lg:relative right-20"
               quality={90}
             />
           </motion.div>
         </motion.div>
       </motion.section>
-
       {/* Tutorial Button */}
       <motion.a
         href="#"
         variants={fadeUpVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        whileHover={{ 
-          scale: 1.05,
-          transition: { duration: 0.2 }
-        }}
+        whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="block"
+        className=""
       >
-        <motion.div
-          whileHover={{
-            filter: "brightness(1.1)",
-          }}
-          transition={{ duration: 0.2 }}
-        >
-          <Image
-            src="/Btn htb.png"
-            alt="Watch Tutorial"
-            width={220}
-            height={80}
-            className="h-[48.1112060546875px] md:h-20 lg:h-[120px] w-[351px] lg:w-[800px] m-auto"
-            quality={90}
-          />
-        </motion.div>
+        <Image
+          src="/Btn htb.png"
+          alt="Watch Tutorial"
+          width={220}
+          height={80}
+          className="h-[48.1112060546875px] md:h-20 lg:h-[120px] w-[351px] lg:w-[800px] m-auto "
+          quality={90}
+        />
       </motion.a>
     </div>
   );
