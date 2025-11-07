@@ -31,7 +31,7 @@ export default function Hero() {
                       height={300}
                       quality={90}
                       className="relative lg:top-12 top-16 
-              h-[154.90926173863448px] w-[332.5324830616657px]
+              h-auto w-[332.5324830616657px]
                xs:w-[250px]
                sm:w-[300px]
                md:w-[450px]
