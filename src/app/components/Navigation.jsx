@@ -18,10 +18,7 @@ export default function Navigation() {
   return (
     <div className="absolute z-100 w-full">
       <motion.nav
-        initial={{ y: -100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 0.5 }}
-        className={`w-full sm:w-[60%] md:w-[55%] lg:w-[50%] xl:w-[55%] 2xl:w-[50%] m-auto my-2 sm:my-3 md:my-4 z-50 transition-all duration-500 py-2 sm:py-3 rounded-lg md:rounded-xl border border-[#CCE697] ${
+        className={`w-full sm:w-[60%] md:w-[55%] lg:w-[50%] xl:w-[45%] 2xl:w-[50%] m-auto my-2 sm:my-3 md:my-4 z-50 transition-all duration-500 py-2 sm:py-3 rounded-lg md:rounded-xl border border-[#CCE697] ${
           scrolled ? '' : ''
         }`}
       >

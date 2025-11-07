@@ -41,9 +41,9 @@ export default function FaqSection() {
                 {faq.question}
                 <span className="relative inline-block">
                   {/* Shadow */}
-                  <span className="absolute inset-0 bg-[#6B8E23] rounded-sm translate-x-[2px] translate-y-[2px]"></span>
+                  <span className="absolute inset-0 bg-[#02221D] rounded-sm translate-x-[2px] translate-y-[2px]"></span>
                   {/* Icon Box */}
-                  <span className="relative border border-[#0F1C0F] opacity-80 bg-[#0E2422] rounded-sm p-3 flex items-center justify-center">
+                  <span className="relative border border-[#0F1C0F] opacity-80 bg-[#02221D] rounded-sm p-3 flex items-center justify-center">
                     {openId === faq.id ? (
                       <Minus size={16} className="text-white" />
                     ) : (

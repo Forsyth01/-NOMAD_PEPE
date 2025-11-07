@@ -1,32 +1,33 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function HowToBuy() {
   const steps = [
     {
-      number: "1",
-      title: "DOWNLOAD PHANTOM WALLET",
+      number: "/1.png",
+      title: "/Download phantom wallet.png",
       description:
         "Download and install the Phantom Wallet either from the app store on your phone or as a browser extension for desktop.",
-      button: "GET PHANTOM WALLET",
+      button: "/getphantobtn.png",
     },
     {
-      number: "2",
-      title: "BUY SOME SOLANA",
+      number: "/2.png",
+      title: "/Buy some Solana.png",
       description:
         "Purchase $SOL from an exchange or bridge $SOL and send it to your Phantom wallet",
       button: null,
     },
     {
-      number: "3",
-      title: "BUY $NOMAD",
+      number: "/3.png",
+      title: "/Buy1.png",
       description:
         "Go to Decentralized Exchanges (DEXs): Raydium, and paste the $NOMAD contract address listed on this website to swap your SOL for NOMAD",
-      button: "BUY NOMAD",
+      button: "/buynomad.png",
     },
     {
-      number: "4",
-      title: "BUY $NOMAD",
+      number: "/4.png",
+      title: "/Buy2.png",
       description:
         "Go to Decentralized Exchanges (DEXs): Raydium, and paste the $NOMAD contract address listed on this website to swap your SOL for NOMAD",
       button: null,
@@ -35,78 +36,91 @@ export default function HowToBuy() {
 
   return (
     <section
-      className="min-h-screen bg-[#4f7a36] relative overflow-hidden py-12 md:py-20 px-4 md:px-6"
+      className="min-h-screen bg-[#4f7a36] relative overflow-hidden px-4 pb-10 md:px-6"
       style={{
-         background: `linear-gradient(rgba(69,102,49,0.5), rgba(69,102,49,0.8)), url('/BG htb.png') center/cover no-repeat`,
-        backgroundSize: "cover", //
+        background: `linear-gradient(rgba(69,102,49,0.5), rgba(69,102,49,0.8)), url('/BG htb.png') center/cover no-repeat`,
+        backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat", // ← no tiling
+        backgroundRepeat: "no-repeat",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      <div className="relative z-10">
-        <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-12">
-          {/* Left side - Pepe Character */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="w-full lg:w-auto lg:sticky lg:top-24 flex justify-center lg:justify-start"
-          >
-            <div className="relative w-64 md:w-80 lg:w-100">
-              <div className="relative">
-                <img src="/nomad_beach.png" alt="" className="absolute" />
-              </div>
-            </div>
-          </motion.div>
+      <div className="z-10 w-full max-w-[1800px] mx-auto relative">
+        {/* Absolute Nomad Beach Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="absolute z-50 left-0 bottom-0 lg:bottom-[-100px] z-0"
+        >
+          <div className="relative w-[300px] md:w-[400px] lg:w-[450px] xl:w-[600px] 2xl:w-[700px]  h-[500px] md:h-[700px] lg:h-[900px] xl:h-[1100px]">
+            <Image
+              src="/nomad_beach.png"
+              alt="Nomad Pepe"
+              fill
+              className="object-contain"
+              quality={100}
+              priority
+            />
+          </div>
+        </motion.div>
 
-          {/* Right side - Clipboard with Steps */}
+        {/* Grid Container */}
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-3 items-end gap-8">
+          {/* Left empty space for the image */}
+          <div className="lg:col-span-1" />
+
+          {/* Right - Steps with Rectangle Background - spans 2 columns */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex-1 w-full max-w-3xl mx-auto lg:mx-0"
+            className="lg:col-span-2 w-full"
           >
-            <div className="relative">
-              
-              {/* Clipboard body */}
-              <div
-                className=""
-                style={{
-                  backgroundImage: "url('/rec htb.png')",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat", // ← no tiling
-                  display: "flex",
-                  // alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <div className="space-y-6 md:space-y-8">
+            {/* Rectangle Background Image Container */}
+            <div className="relative w-full">
+              {/* Background Rectangle Image */}
+              <Image
+                src="/rec htb.png"
+                alt=""
+                width={800}
+                height={1000}
+                className="w-full h-auto"
+                quality={90}
+              />
+
+              {/* Content Overlay */}
+              <div className="absolute inset-0 p-8 md:p-12 lg:p-16 mt-20 flex items-center">
+                <div className="space-y-4 md:space-y-6 w-full">
                   {steps.map((step, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, x: 50 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                      className="flex gap-4 md:gap-6"
+                      className="flex gap-3 md:gap-4"
                     >
                       {/* Number badge */}
                       <div className="flex-shrink-0">
-                        <div className="w-14 h-14 md:w-16 md:h-16 bg-[#B7D74B] rounded-2xl flex items-center justify-center border-4 border-[#2a3a2a] shadow-lg">
-                          <span className="text-[#1a2a1a] text-3xl md:text-4xl lucky">
-                            {step.number}
-                          </span>
+                        <div className="relative w-6 h-6 md:w-8 md:h-8">
+                          <Image
+                            src={step.number}
+                            alt={`Step ${index + 1}`}
+                            fill
+                            className="object-contain"
+                            quality={90}
+                          />
                         </div>
                       </div>
 
-                      {/* Content */}
+                      {/* Step Content */}
                       <div className="flex-1">
-                        <h3 className="text-white text-xl md:text-2xl lucky mb-2 uppercase tracking-tight">
-                          {step.title}
+                        <h3>
+                          <img src={step.title} className="object-contain" />
                         </h3>
-                        <p className="text-gray-300 text-sm md:text-base leading-relaxed mb-3">
+                        <p className="my-2 text-[20px] jockey text-[#E5EED2] leading-relaxed mb-2">
                           {step.description}
                         </p>
                         {step.button && (
@@ -114,9 +128,12 @@ export default function HowToBuy() {
                             href="#"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="inline-block bg-[#99CC33] hover:bg-[#8BC033] text-[#1a2a1a] px-4 md:px-6 py-2 md:py-2.5 rounded-lg lucky text-xs md:text-sm uppercase tracking-wide transition-colors shadow-md"
                           >
-                            {step.button}
+                            <img
+                              src={step.button}
+                              className="object-contain"
+                              alt={`Button for ${index + 1}`}
+                            />
                           </motion.a>
                         )}
                       </div>
@@ -125,10 +142,10 @@ export default function HowToBuy() {
                 </div>
               </div>
             </div>
-
-            {/* Tutorial Video Button */}
           </motion.div>
         </div>
+
+        {/* Tutorial Video Button */}
         <motion.a
           href="#"
           whileHover={{ scale: 1.02, y: -2 }}
@@ -136,9 +153,16 @@ export default function HowToBuy() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className=""
+          className="block mt-10 relative z-10"
         >
-          <img src="/Btn htb.png" alt="" className="h-20 m-auto mt-10 " />
+          <Image
+            src="/Btn htb.png"
+            alt="Tutorial Button"
+            width={200}
+            height={80}
+            className="h-20 w-auto m-auto"
+            quality={90}
+          />
         </motion.a>
       </div>
     </section>

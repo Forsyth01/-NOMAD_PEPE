@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 export default function NomadMarquee() {
   return (
-    <div className="relative">
-      {/* YOUR IMAGE — exact pixel size */}
+    <div className="bg-[#70903c]">
+    <div className="relative ">
       <img
         src="/marqeebg.png"
         alt="Nomad"
-        className="h-20 w-full block " /* removes bottom gap */
+        className="h-20 w-full block " 
       />
 
       {/* MARQUEE — perfectly overlaid */}
@@ -32,6 +32,7 @@ export default function NomadMarquee() {
           ))}
         </motion.div>
       </div>
+    </div>
     </div>
   );
 }
