@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 import SocialIcons from "./SocialIcons";
 
 export default function Hero() {
@@ -20,10 +21,19 @@ export default function Hero() {
             {/* FLEX CONTAINER */}
             <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-8 lg:gap-0">
               {/* Left Content */}
-              <div className="lg:pl-12">
+              <motion.div 
+                className="lg:pl-12"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
                 <div>
                   {/* Logo */}
-                  <div>
+                  <motion.div
+                    initial={{ opacity: 0, y: -30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                  >
                     <Image
                       src="/assets/logo.png"
                       alt="Logo"
@@ -40,40 +50,79 @@ export default function Hero() {
                xl:h-[350.48741138446843px]
                2xl:w-[700px]"
                     />
-                  </div>
+                  </motion.div>
 
                   {/* Tagline */}
-                  <div className="mt-4 lg:mt-2">
-                    <p className="relative lg:bottom-4 xl:bottom:6 lucky text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] px-4 sm:px-8 lg:px-0 rotate-[-2deg]">
+                  <motion.div 
+                    className="mt-4 lg:mt-2"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                  >
+                    <motion.p 
+                      className="relative lg:bottom-4 xl:bottom:6 lucky text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] px-4 sm:px-8 lg:px-0 rotate-[-2deg]"
+                      initial={{ scale: 0.9 }}
+                      animate={{ scale: 1 }}
+                      transition={{ duration: 0.5, delay: 0.6 }}
+                    >
                       Hop On. Explore the Chain.
-                    </p>
-                  </div>
+                    </motion.p>
+                  </motion.div>
                 </div>
 
                 {/* Buy Button */}
-                <div className="hidden lg:block">
+                <motion.div 
+                  className="hidden lg:block"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.8 }}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <a href="#" className="">
                     <img src="/buynomad.png" alt="" className="m-auto h-20" />
                   </a>
-                </div>
+                </motion.div>
 
                 {/* Social Icons */}
-                <div className="py-3 sm:py-4 mt-3 sm:mt-4 lg:mt-0 hidden lg:block">
+                <motion.div 
+                  className="py-3 sm:py-4 mt-3 sm:mt-4 lg:mt-0 hidden lg:block"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 1 }}
+                >
                   <SocialIcons />
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
 
               {/* Right Image */}
-              <div className="relative h-130 w-94 sm:w-80 md:w-[20rem] lg:w-[50rem] xl:w-[48rem] 2xl:w-[50rem] sm:h-80 md:h-[20rem] lg:h-[36rem] xl:h-[45rem] 2xl:h-[50rem] mx-auto">
-                <Image
-                  src="/assets/image2.png"
-                  alt="Nomad Pepe"
-                  fill
-                  className="lg:object-contain object-cover"
-                  priority
-                  quality={90}
-                />
-              </div>
+              <motion.div 
+                className="relative h-130 w-94 sm:w-80 md:w-[20rem] lg:w-[50rem] xl:w-[48rem] 2xl:w-[50rem] sm:h-80 md:h-[20rem] lg:h-[36rem] xl:h-[45rem] 2xl:h-[50rem] mx-auto"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                <motion.div
+                  animate={{ 
+                    y: [0, -15, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  className="w-full h-full"
+                >
+                  <Image
+                    src="/assets/image2.png"
+                    alt="Nomad Pepe"
+                    fill
+                    className="lg:object-contain object-cover"
+                    priority
+                    quality={90}
+                  />
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </div>
