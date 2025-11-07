@@ -39,7 +39,6 @@ export default function Hero() {
                xl:w-[800.7236653215286px]
                xl:h-[350.48741138446843px]
                2xl:w-[700px]"
-                      priority
                     />
                   </div>
 
