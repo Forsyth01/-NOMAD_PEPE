@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Expedition() {
   return (
     <div
-      className="min-h-screen bg-[#456631] flex items-center justify-center pb-20 pt-4 lg:pt-0 lg:pb-0"
+      className="min-h-screen md:h-auto lg:m-h-screen bg-[#456631] flex items-center justify-center pb-20 pt-4 lg:pt-0 lg:pb-0"
       style={{
         background: `linear-gradient(rgba(69,102,49,0.6), rgba(69,102,49,0.8)), url('/nomad_expedition_frame_bg.png') center/cover no-repeat`,
         backgroundSize: "cover",
