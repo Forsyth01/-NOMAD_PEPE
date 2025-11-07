@@ -12,7 +12,7 @@ export default function NomadMarquee() {
       />
 
       {/* MARQUEE — perfectly overlaid */}
-      <div className="absolute top-1 inset-0 flex items-center overflow-hidden lg:ml-14 ml-4">
+      <div className="absolute top-1 inset-0 flex items-center overflow-hidden lg:ml-14 md:ml-10 ml-4">
         <motion.div
           className="flex whitespace-nowrap"
           animate={{ x: [0, -2400] }}

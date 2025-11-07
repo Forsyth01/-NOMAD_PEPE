@@ -30,7 +30,15 @@ export default function Hero() {
                       width={900}
                       height={300}
                       quality={90}
-                      className="relative lg:top-12 top-16"
+                      className="relative lg:top-12 top-16 
+              
+               xs:w-[250px]
+               sm:w-[300px]
+               md:w-[450px]
+               lg:w-[750px]
+               xl:w-[800.7236653215286px]
+               xl:h-[350.48741138446843px]
+               2xl:w-[700px]"
                       priority
                     />
                   </div>
@@ -57,7 +65,7 @@ export default function Hero() {
               </div>
 
               {/* Right Image */}
-              <div className="relative h-130 w-94 sm:w-80 md:w-[20rem] lg:w-[50rem] xl:w-[48rem] 2xl:w-[50rem] sm:h-80 md:h-[28rem] lg:h-[36rem] xl:h-[45rem] 2xl:h-[50rem] mx-auto">
+              <div className="relative h-130 w-94 sm:w-80 md:w-[20rem] lg:w-[50rem] xl:w-[48rem] 2xl:w-[50rem] sm:h-80 md:h-[20rem] lg:h-[36rem] xl:h-[45rem] 2xl:h-[50rem] mx-auto">
                 <Image
                   src="/assets/image2.png"
                   alt="Nomad Pepe"

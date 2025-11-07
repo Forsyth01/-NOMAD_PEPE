@@ -48,14 +48,14 @@ export default function Nomadnomics() {
             className="flex-1 w-full lg:order-2"
           >
             {/* Title - Centered on mobile */}
-            <div className="mb-6 sm:mb-8 lg:text-left mt-14 lg:mt-0">
+            <div className="mb-6 sm:mb-8 lg:text-left md:text-center mt-14 lg:mt-0">
               <h1 className="text-[#e5eed2] text-5xl sm:text-4xl md:text-5xl uppercase tracking-wide">
                 #NOMADNOMICS
               </h1>
             </div>
 
             {/* Total Supply */}
-            <div className="mb-4 sm:mb-5  lg:text-left">
+            <div className="mb-4 sm:mb-5  lg:text-left md:text-center">
               <h3 className="text-[#Acc578] text-sm sm:text-base md:text-lg mb-1 uppercase ">
                 TOTAL SUPPLY
               </h3>
@@ -65,18 +65,18 @@ export default function Nomadnomics() {
             </div>
 
             {/* Buy/Sell Tax */}
-            <div className="mb-6 sm:mb-8 flex  gap-2 lg:justify-start">
+            <div className="mb-6 sm:mb-8 flex  gap-2 lg:justify-start md:justify-center">
               <div className="w-5 h-5 sm:w-6 sm:h-6 bg-[#9fd235] rounded-full flex items-center justify-center flex-shrink-0">
                 <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-[#6b8d26] rounded-full"></div>
               </div>
-              <p className="text-[#e5eed2] text-base text-left sm:text-lg md:text-xl ">
+              <p className="text-[#e5eed2] text-base text-left md:text-center sm:text-lg md:text-xl ">
                 BUY/SELL TAX: 0%
               </p>
             </div>
 
             {/* Contract Address */}
             <div className="mb-6 sm:mb-8">
-              <h3 className="text-[#ffffff] text-sm sm:text-base md:text-lg mb-3 uppercase tracking-wide lg:text-left">
+              <h3 className="text-[#ffffff] text-sm md:text-center sm:text-base md:text-lg mb-3 uppercase tracking-wide lg:text-left">
                 CONTRACT ADDRESS
               </h3>
 
@@ -121,7 +121,7 @@ export default function Nomadnomics() {
             </div>
 
             {/* Buy Button - Hidden on mobile, shown on desktop */}
-            <div className="hidden lg:block">
+            <div className="hidden lg:block ">
               <motion.a
                 href="#"
                 whileHover={{ scale: 1.05, y: -2 }}
