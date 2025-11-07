@@ -36,7 +36,7 @@ export default function Hero() {
                   </div>
 
                   {/* Tagline */}
-                  <div className="mt-2">
+                  <div className="mt-4 lg:mt-2">
                     <p className="relative lg:bottom-4 xl:bottom:6 lucky text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] px-4 sm:px-8 lg:px-0 rotate-[-2deg]">
                       Hop On. Explore the Chain.
                     </p>
