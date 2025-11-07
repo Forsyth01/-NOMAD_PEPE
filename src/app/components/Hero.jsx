@@ -37,7 +37,7 @@ export default function Hero() {
 
                   {/* Tagline */}
                   <div className="mt-2">
-                    <p className="relative lg:bottom-4 xl:bottom:6 lucky text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] px-4 sm:px-8 lg:px-0">
+                    <p className="relative lg:bottom-4 xl:bottom:6 lucky text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] px-4 sm:px-8 lg:px-0 rotate-[-2deg]">
                       Hop On. Explore the Chain.
                     </p>
                   </div>
@@ -57,7 +57,7 @@ export default function Hero() {
               </div>
 
               {/* Right Image */}
-              <div className="relative h-125 w-94 sm:w-80 md:w-[20rem] lg:w-[50rem] xl:w-[48rem] 2xl:w-[50rem] sm:h-80 md:h-[28rem] lg:h-[36rem] xl:h-[45rem] 2xl:h-[50rem] mx-auto">
+              <div className="relative h-130 w-94 sm:w-80 md:w-[20rem] lg:w-[50rem] xl:w-[48rem] 2xl:w-[50rem] sm:h-80 md:h-[28rem] lg:h-[36rem] xl:h-[45rem] 2xl:h-[50rem] mx-auto">
                 <Image
                   src="/assets/image2.png"
                   alt="Nomad Pepe"

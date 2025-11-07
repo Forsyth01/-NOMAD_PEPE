@@ -10,7 +10,7 @@ export default function SocialIcons() {
   ];
 
   return (
-    <div className="flex items-center justify-center space-x-3">
+    <div className="flex items-center justify-center space-x-2">
       {icons.map(({ id, image, link, rotate }) => (
         <motion.a
           key={id}
