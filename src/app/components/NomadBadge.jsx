@@ -4,12 +4,12 @@ import SocialIcons from "./SocialIcons";
 export default function NomadBadge() {
   return (
     <div
-      className=" relative flex flex-col items-center justify-center bg-[#E5EED2] p-8 bg-contain"
+      className=" relative flex flex-col items-center justify-center bg-[#E5EED2] pb-4 bg-contain"
       style={{
         backgroundImage: "url('/nomadbadge_bg.png')",
         backgroundSize: "cover", // 
         backgroundPosition: "center", 
-        backgroundRepeat: "no-repeat", // ← no tiling
+        // backgroundRepeat: "no-repeat", 
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
