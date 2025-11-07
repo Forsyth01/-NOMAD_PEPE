@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <main className="">
       <Navigation />
-      <Hero />
+      {/* <Hero /> */}
       <Marquee />
       <HowToBuy/>
       {/* <BuyUsingJupiter/> */}
