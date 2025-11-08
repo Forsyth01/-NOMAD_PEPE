@@ -12,18 +12,18 @@ export default function Hero() {
         className="block md:hidden top-0 absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: 'url("/assets/Frame 70.png")',
-          backgroundColor: "rgba(0, 0, 0, 0.6)", // Darkens the image
-          backgroundBlendMode: "multiply", // Blends the color with the image
-          opacity: 0.8, // Reduces opacity
+          backgroundColor: "rgba(0, 0, 0, 0.6)",
+          backgroundBlendMode: "multiply",
+          opacity: 0.8,
         }}
       ></div>
       <div
         className="block md:hidden absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: 'url("/assets/herobg2.png")',
-          backgroundColor: "rgba(0, 0, 0, 0.6)", // Darkens the image
-          backgroundBlendMode: "multiply", // Blends the color with the image
-          opacity: 0.8, // Reduces opacity
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          backgroundBlendMode: "multiply",
+          opacity: 0.8,
         }}
       ></div>
       {/* Desktop Background */}
@@ -31,14 +31,14 @@ export default function Hero() {
         className="hidden md:block absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: 'url("/assets/herobg.png")' }}
       ></div>
-      <div className="z-10 items-center h-full md:h-auto">
+      <div className="relative z-10 items-center h-full md:h-auto">
         <div className="w-full text-center h-full md:h-auto">
           <div className="flex justify-center items-center lg:h-screen overflow-hidden h-full md:h-auto">
             {/* FLEX CONTAINER */}
             <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-8 lg:gap-0 w-full h-full md:h-auto pt-6 md:pt-0">
               {/* Left Content */}
               <motion.div
-                className="lg:pl-12 flex-shrink-0"
+                className="lg:pl-12 flex-shrink-0 relative z-20"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -57,7 +57,7 @@ export default function Hero() {
                       xs:w-[250px]
                       sm:w-[300px]
                       md:w-[450px]
-                      lg:w-[550px]
+                      lg:w-[500px]
                       xl:w-[650.7236653215286px]
                       xl:h-[350.48741138446843px]
                       2xl:w-[700px]"
@@ -71,13 +71,20 @@ export default function Hero() {
                 </div>
 
                 {/* Buy Button */}
-                <div className="hidden lg:block">
+                <div className="hidden lg:block mt-8">
                   <motion.a
                     href="#howtobuy"
                     whileHover={{ scale: 1.06 }}
                     whileTap={{ scale: 0.95 }}
+                    className="inline-block"
                   >
-                    <img src="/buynomad.png" alt="" className="m-auto h-20" />
+                    <Image
+                      src="/buynomad.png"
+                      alt="Buy Nomad"
+                      width={200}
+                      height={80}
+                      className="m-auto h-20 w-auto"
+                    />
                   </motion.a>
                 </div>
 
@@ -92,7 +99,7 @@ export default function Hero() {
                 className="relative h-[500px] w-[500px] sm:w-80 sm:h-80 md:w-[20rem] md:h-[20rem] 
   lg:w-[50rem] lg:h-[36rem] xl:w-[48rem] xl:h-[45rem] 2xl:w-[50rem] 2xl:h-[50rem] 
   lg:mx-auto overflow-hidden 
-  mt-auto md:mt-6 lg:mt-0"
+  mt-auto md:mt-6 lg:mt-0 z-10"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
