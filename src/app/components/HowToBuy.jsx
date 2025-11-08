@@ -62,7 +62,8 @@ export default function HowToBuy() {
       </section>
       {/* Tutorial Button */}
       <motion.a
-        href="#"
+        href="https://youtube.com/shorts/bYSO5CLcLHE?si=lwp16dA21gbY6xml"
+        target="_blank"
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, delay: 0.4 }}

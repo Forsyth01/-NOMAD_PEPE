@@ -1,12 +1,25 @@
-'use client';
-import { motion } from 'framer-motion';
+"use client";
+import { motion } from "framer-motion";
 
 export default function SocialIcons() {
   const icons = [
-    { id: 1, image: '/social1.png', link: '#', rotate: -20 },       // Telegram
-    { id: 2, image: '/social2.png', link: '#', rotate: -7 },        // Instagram
-    { id: 3, image: '/social3.png', link: '#', rotate: 7 },         // X (Twitter)
-    { id: 4, image: '/social4.png', link: '#', rotate: 20 },        // TikTok
+    { id: 1, image: "/social1.png", link: "https://t.me/nomadpepecoin" }, // Telegram
+    {
+      id: 2,
+      image: "/social2.png",
+      link: "https://www.instagram.com/nomadcoinhq?igsh=OTlrY3VwcXo0eXlq",
+    }, // Instagram
+    {
+      id: 3,
+      image: "/social3.png",
+      link: "https://x.com/nomadcoinhq?s=21",
+      rotate: 7,
+    }, // X (Twitter)
+    {
+      id: 4,
+      image: "/social4.png",
+      link: "https://youtube.com/@soullabsofficial?si=lfFTcx0w61gbC-d-",
+    }, // TikTok
   ];
 
   return (
@@ -25,8 +38,8 @@ export default function SocialIcons() {
 
           {/* Main Icon Box with Image */}
           <span className="">
-            <img 
-              src={image} 
+            <img
+              src={image}
               alt={`Social icon ${id}`}
               className="w-full h-12 object-contain"
             />
