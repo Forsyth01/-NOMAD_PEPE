@@ -113,33 +113,25 @@ export default function Navigation() {
                   damping: 30,
                   stiffness: 300,
                 }}
-                className="fixed top-0 right-0 h-full w-72 max-w-[80vw] bg-gradient-to-b from-[#1a3a35] to-[#0E2422] border-l border-[#99CC33]/30 shadow-2xl flex flex-col z-50 md:hidden overflow-hidden"
+                className="fixed top-0 right-0 h-full w-72 max-w-[80vw] bg-gradient-to-b from-[#1a3a35] to-[#0E2422] border-l border-[#99CC33]/30 shadow-2xl flex flex-col justify-between z-50 md:hidden"
               >
-                {/* Compact Header */}
+                {/* Header */}
                 <div className="p-4 border-b border-[#99CC33]/20 flex-shrink-0">
                   <div className="flex items-center justify-between">
-                    <motion.h2
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.1 }}
-                      className="text-xl font-bold text-[#99CC33] lucky"
-                    >
+                    <h2 className="text-xl font-bold text-[#99CC33] lucky">
                       Menu
-                    </motion.h2>
-                    <motion.button
-                      initial={{ opacity: 0, scale: 0 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.2 }}
+                    </h2>
+                    <button
                       onClick={() => setIsOpen(false)}
                       className="p-1 rounded-full bg-[#99CC33]/20 hover:bg-[#99CC33]/30 transition-colors"
                     >
                       <X size={18} className="text-[#99CC33]" />
-                    </motion.button>
+                    </button>
                   </div>
                 </div>
 
-                {/* Menu Items */}
-                <div className="flex-1 overflow-y-auto py-2 px-4 space-y-2">
+                {/* Menu Links */}
+                <div className="flex flex-col items-center justify-center flex-1 space-y-3 px-4">
                   {menuItems.map((item, index) => (
                     <motion.a
                       key={item}
@@ -149,20 +141,15 @@ export default function Navigation() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.1 + index * 0.1 }}
                       whileHover={{ x: 4, scale: 1.02 }}
-                      className="block p-3 rounded-xl bg-[#2a4a45] hover:bg-[#99CC33]/20 border border-[#99CC33]/10 text-[#E5EED2] text-base font-medium transition-all duration-300 shadow"
+                      className="block w-full text-center p-3 rounded-xl bg-[#2a4a45] hover:bg-[#99CC33]/20 border border-[#99CC33]/10 text-[#E5EED2] text-base font-medium transition-all duration-300 shadow"
                     >
                       {item}
                     </motion.a>
                   ))}
                 </div>
 
-                {/* Social Links */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.4 }}
-                  className="p-4 border-t border-[#99CC33]/20 flex-shrink-0"
-                >
+                {/* Social Section */}
+                <div className="p-4 border-t border-[#99CC33]/20 flex-shrink-0 bg-[#0F1C0F]/20">
                   <h3 className="text-[#99CC33] text-xs font-semibold mb-3 text-center uppercase tracking-wider">
                     Join Community
                   </h3>
@@ -183,7 +170,7 @@ export default function Navigation() {
                       </motion.a>
                     ))}
                   </div>
-                </motion.div>
+                </div>
               </motion.div>
             </>
           )}
