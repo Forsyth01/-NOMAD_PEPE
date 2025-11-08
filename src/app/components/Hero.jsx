@@ -74,7 +74,7 @@ export default function Hero() {
 
               {/* Right Image */}
               <motion.div
-                className="relative h-[460px] w-[460px] sm:w-80 sm:h-80 md:w-[20rem] md:h-[20rem] lg:w-[50rem] lg:h-[36rem] xl:w-[48rem] xl:h-[45rem] 2xl:w-[50rem] 2xl:h-[50rem] mx-auto overflow-hidden"
+                className="relative h-[500px] w-[500px] sm:w-80 sm:h-80 md:w-[20rem] md:h-[20rem] lg:w-[50rem] lg:h-[36rem] xl:w-[48rem] xl:h-[45rem] 2xl:w-[50rem] 2xl:h-[50rem] lg:mx-auto overflow-hidden"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
