@@ -62,7 +62,7 @@ export default function HowToBuy() {
         </motion.div>
       </section>
       {/* Tutorial Button */}
-      <motion.a
+      {/* <motion.a
         href="https://youtube.com/shorts/bYSO5CLcLHE?si=lwp16dA21gbY6xml"
         target="_blank"
         initial={{ opacity: 0, y: 20 }}
@@ -80,7 +80,7 @@ export default function HowToBuy() {
           className="h-[48.1112060546875px] md:h-20 lg:h-[120px] w-[351px] lg:w-[800px] m-auto "
           quality={90}
         />
-      </motion.a>
+      </motion.a> */}
     </div>
   );
 }
