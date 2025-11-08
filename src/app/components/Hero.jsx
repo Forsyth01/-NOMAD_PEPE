@@ -9,10 +9,23 @@ export default function Hero() {
     <section className="relative h-screen md:h-full lg:h-screen overflow-hidden">
       {/* Mobile Background */}
       <div
-        className="block md:hidden absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url("/assets/herobg-mobile.png")' }}
+        className="block md:hidden top-0 absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("/assets/Frame 70.png")',
+          backgroundColor: "rgba(0, 0, 0, 0.6)", // Darkens the image
+          backgroundBlendMode: "multiply", // Blends the color with the image
+          opacity: 0.8, // Reduces opacity
+        }}
       ></div>
-
+      <div
+        className="block md:hidden absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("/assets/herobg2.png")',
+          backgroundColor: "rgba(0, 0, 0, 0.6)", // Darkens the image
+          backgroundBlendMode: "multiply", // Blends the color with the image
+          opacity: 0.8, // Reduces opacity
+        }}
+      ></div>
       {/* Desktop Background */}
       <div
         className="hidden md:block absolute inset-0 bg-cover bg-center"
