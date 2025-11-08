@@ -19,7 +19,7 @@ export default function Hero() {
         <div className="w-full text-center h-full md:h-auto">
           <div className="flex justify-center items-center lg:h-screen overflow-hidden h-full md:h-auto">
             {/* FLEX CONTAINER */}
-            <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-8 lg:gap-0 w-full h-full md:h-auto">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-8 lg:gap-0 w-full h-full md:h-auto pt-6 md:pt-0">
               {/* Left Content */}
               <motion.div
                 className="lg:pl-12 flex-shrink-0"
