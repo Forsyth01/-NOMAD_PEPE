@@ -74,7 +74,7 @@ export default function Hero() {
 
               {/* Right Image */}
               <motion.div
-                className="relative h-130 w-130 sm:w-80 md:w-[20rem] lg:w-[50rem] xl:w-[48rem] 2xl:w-[50rem] sm:h-80 md:h-[20rem] lg:h-[36rem] xl:h-[45rem] 2xl:h-[50rem] mx-auto"
+                className="relative h-140 w-140 sm:w-80 md:w-[20rem] lg:w-[50rem] xl:w-[48rem] 2xl:w-[50rem] sm:h-80 md:h-[20rem] lg:h-[36rem] xl:h-[45rem] 2xl:h-[50rem] mx-auto"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
