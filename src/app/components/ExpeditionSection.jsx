@@ -76,7 +76,7 @@ export default function Expedition() {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative max-w-7xl w-full overflow-hidden"
       >
-        <div className="relative grid md:grid-cols-2 gap-8 p-8 md:p-12">
+        <div className="relative grid lg:grid-cols-2 gap-8 p-8 md:p-12">
           {/* Left: Text Section */}
           <motion.div
             variants={containerVariants}
@@ -147,11 +147,11 @@ export default function Expedition() {
             variants={imageVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            className="md:relative items-center justify-center "
+            className="lg:relative items-center justify-center "
           >
             {/* Golden Frame - Reduced Size */}
             <motion.div 
-              className="relative w-[350px] h-[400px] md:w-[400px] md:h-[500px] lg:w-[500px] lg:h-[600px]"
+              className="relative w-[350px]  h-[400px] md:w-[400px] md:h-[500px] lg:w-[500px] xl:w-[650px] lg:h-[600px]"
               animate={{ 
                 y: [0, -10, 0],
               }}
@@ -162,10 +162,11 @@ export default function Expedition() {
               }}
             >
               <Image
-                src="/nomad_expedition_frame.png"
+               
+                src="/website 2.png"
                 alt="Golden Frame"
                 fill
-                className="object-contain"
+                className="object-cover m-auto"
               />
             </motion.div>
           </motion.div>

@@ -17,31 +17,40 @@ export default function HowToBuy() {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        
+
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-    
-      <section className="lg:grid grid-cols-2 pb-6 ">
+      <section className="flex flex-col lg:grid grid-cols-2 pb-6 ">
         {/* Left Image */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="hidden lg:flex  flex-col justify-end"
+          className="block lg:flex flex-col justify-end order-2 lg:order-1 "
         >
-          <div className="">
+          <motion.div
+            className="relative z-100"
+            animate={{
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 3.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
             <Image
-              src="/nomad_beach.png"
+              src="/website 3.png"
               alt="Nomad Beach"
               width={500}
-            height={500}
-            className="object-contain w-[300px] sm:w-[400px] lg:w-[600px] xl:w-[880px] relative"
+              height={500}
+              className="object-contain w-[400px] m-auto lg:m-0 sm:w-[400px] lg:w-[600px] xl:w-[880px] relative z-100"
               quality={100}
               priority
             />
-          </div>
+          </motion.div>
         </motion.div>
 
         {/* Right Image */}
@@ -49,7 +58,7 @@ export default function HowToBuy() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex-1 flex flex-col items-center justify-center text-center "
+          className="flex-1 flex flex-col items-center justify-center text-center order-1 lg:order-2"
         >
           <Image
             src="/howtobuy.png"
@@ -61,26 +70,6 @@ export default function HowToBuy() {
           />
         </motion.div>
       </section>
-      {/* Tutorial Button */}
-      {/* <motion.a
-        href="https://youtube.com/shorts/bYSO5CLcLHE?si=lwp16dA21gbY6xml"
-        target="_blank"
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className=""
-      >
-        <Image
-          src="/Btn htb.png"
-          alt="Watch Tutorial"
-          width={220}
-          height={80}
-          className="h-[48.1112060546875px] md:h-20 lg:h-[120px] w-[351px] lg:w-[800px] m-auto "
-          quality={90}
-        />
-      </motion.a> */}
     </div>
   );
 }

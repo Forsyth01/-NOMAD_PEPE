@@ -216,7 +216,7 @@ export default function Nomadnomics() {
               {/* Circular border with image */}
               <div className="relative rounded-full overflow-hidden">
                 <img
-                  src="/nomadnomics.png"
+                  src="/not blur.png" 
                   alt="Nomad Pepe"
                   className="w-full h-auto"
                 />
