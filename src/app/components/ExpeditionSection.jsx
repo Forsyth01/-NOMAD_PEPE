@@ -151,7 +151,7 @@ export default function Expedition() {
           >
             {/* Golden Frame - Reduced Size */}
             <motion.div 
-              className="relative w-[350px]  h-[400px] md:w-[400px] md:h-[500px] lg:w-[500px] xl:w-[650px] lg:h-[600px]"
+              className="relative w-[350px  h-[420px] md:w-[400px] md:h-[500px] lg:w-[500px] xl:w-[650px] lg:h-[600px]"
               animate={{ 
                 y: [0, -10, 0],
               }}

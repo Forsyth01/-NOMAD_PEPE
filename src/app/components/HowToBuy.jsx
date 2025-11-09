@@ -43,10 +43,10 @@ export default function HowToBuy() {
           >
             <Image
               src="/website 3.png"
-              alt="Nomad Beach"
+              alt="Nomad Beach" 
               width={500}
               height={500}
-              className="object-contain w-[400px] m-auto lg:m-0 sm:w-[400px] lg:w-[600px] xl:w-[880px] relative z-100"
+              className="object-contain w-[420px m-auto lg:m-0 sm:w-[400px] lg:w-[600px] xl:w-[880px] relative z-100"
               quality={100}
               priority
             />
@@ -61,7 +61,7 @@ export default function HowToBuy() {
           className="flex-1 flex flex-col items-center justify-center text-center order-1 lg:order-2"
         >
           <Image
-            src="/howtobuy.png"
+            src="/howtobuy2.png"
             alt="How to Buy"
             width={500}
             height={500}
