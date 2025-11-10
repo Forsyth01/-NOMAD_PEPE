@@ -5,14 +5,13 @@ import { Copy, Check } from "lucide-react";
 
 export default function Nomadnomics() {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "MADHPJRN6BP8T7BR5Y7NUSUNWWA2JU8BYPOBZPRHBHV";
+  const contractAddress = "COMING SOON";
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(contractAddress);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    // Disable copy functionality until launch
+    return;
   };
 
   const containerVariants = {
@@ -137,40 +136,10 @@ export default function Nomadnomics() {
 
               {/* Contract box */}
               <div className="w-full max-w-md lg:max-w-2xl mx-auto lg:mx-0 ">
-                <div className="bg-[#1a3a35]/50 border-2 border-[#ACC578] rounded-xl p-3 sm:p-4 flex flex-row sm:flex-row items-center justify-between gap-3 w-full">
-                  <p className="text-[#e5eed2] text-xl sm:text-sm md:text-xl break-all  sm:text-left flex-1">
+                <div className="bg-[#1a3a35]/50 border-2 border-[#ACC578] rounded-xl p-3 sm:p-4 flex flex-row sm:flex-row items-center justify-center gap-3 w-full">
+                  <p className="text-[#e5eed2] text-2xl sm:text-3xl md:text-4xl font-bold tracking-wider text-center flex-1">
                     {contractAddress}
                   </p>
-
-                  {/* Copy Button */}
-                  <div className="relative">
-                    <div
-                      aria-hidden="true"
-                      className="absolute inset-0 bg-[#a9c577] rounded-md translate-x-1 translate-y-1 -z-10"
-                    ></div>
-
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      onClick={handleCopy}
-                      aria-label={
-                        copied ? "Copied to clipboard" : "Copy contract address"
-                      }
-                      className="relative bg-[#6b8d26] hover:bg-[#7ca933] text-[#e5eed2] px-4 py-2 rounded-md text-sm uppercase tracking-wide flex items-center gap-2 transition-colors"
-                    >
-                      {copied ? (
-                        <>
-                          <span className="font-semibold">COPIED</span>
-                          <Check size={18} />
-                        </>
-                      ) : (
-                        <>
-                          <span className="font-semibold">COPY</span>
-                          <Copy size={18} />
-                        </>
-                      )}
-                    </motion.button>
-                  </div>
                 </div>
               </div>
             </motion.div>
