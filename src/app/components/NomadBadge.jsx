@@ -83,9 +83,9 @@ export default function NomadBadge() {
             }}
           >
             <img
-              src="/nomadbadge.png"
+              src="/website 5.png"
               alt="Nomad Badge"
-              className="h-120 object-cover"
+              className="md:h-120 object-cover"
             />
           </motion.div>
         </motion.div>
