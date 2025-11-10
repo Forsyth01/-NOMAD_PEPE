@@ -11,7 +11,7 @@ export default function HowToBuy() {
     <div
       ref={ref}
       id="howtobuy"
-      className="pb-5 px-4 lg:px-0"
+      className="lg:pb-5 pb-2 px-4 lg:px-0"
       style={{
         background: `linear-gradient(rgba(69,102,49,0.5), rgba(69,102,49,0.8)), url('/bg 4.png') center/cover no-repeat`,
         backgroundSize: "cover",
@@ -22,7 +22,7 @@ export default function HowToBuy() {
         justifyContent: "center",
       }}
     >
-      <section className="flex flex-col lg:grid grid-cols-2 pb-6 ">
+      <section className="flex flex-col lg:grid grid-cols-2 lg:pb-6 ">
         {/* Left Image */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
