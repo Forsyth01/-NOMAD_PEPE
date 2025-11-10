@@ -8,7 +8,6 @@ const faqs = [
   { id: 2, question: "WHAT'S THE TOKEN CONTRACT ADDRESS?", answer: 'The official contract address will be released on launch.' },
   { id: 3, question: 'WILL THERE BE AIRDROPS?', answer: 'Yes! Airdrops will reward early supporters and active community members.' },
   { id: 4, question: 'WHAT ARE THE OFFICIAL PROJECT LINKS?', answer: 'You can find all links on our verified channels and website.' },
-  { id: 5, question: 'WHAT ARE THE OFFICIAL PROJECT LINKS?', answer: 'You can find all links on our verified channels and website.' },
 ];
 
 export default function FaqSection() {

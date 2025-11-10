@@ -152,8 +152,7 @@ export default function Expedition() {
                 ease: "easeInOut"
               }}
             >
-              <Image
-               
+              <Image               
                 src="/website 2.png"
                 alt="Golden Frame"
                 fill
