@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         />
 
         {/* ✅ Favicon and Icons */}
-        <link rel="icon" href="/assets/fav.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/assets/hero.png" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/assets/fav.png" />
         <meta name="theme-color" content="#99CC33" />
 
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://yourdomain.com/assets/fav.png"
+          content="https://yourdomain.com/assets/hero.png"
         />
         <meta property="og:url" content="https://yourdomain.com" />
         <meta property="og:type" content="website" />
@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://yourdomain.com/assets/fav.png"
+          content="https://yourdomain.com/assets/hero.png"
         />
       </head>
 

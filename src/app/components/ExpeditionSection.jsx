@@ -88,24 +88,15 @@ export default function Expedition() {
               variants={textVariants}
               className="text-5xl"
             >
-              CASH THE HOP! START <br className="hidden lg:flex" />
-              THE EXPEDITION!
+              TAP TO PLAY GAME <br className="hidden lg:flex" />
+              COMING SOON
             </motion.h1>
-
-            <motion.p 
-              variants={textVariants}
-              className="text-xl md:text-xl text-[#E5EED2] lucky"
-            >
-              Join the most epic tap-to-earn adventure in the crypto space.{" "}
-              <span className="text-[#E5EED2]">$NOMAD</span> is your ticket to
-              the real world of decentralized fun!
-            </motion.p>
 
             <ul className="space-y-4 text-xl lucky">
               {[
-                "Be part of a rapidly growing community of $NOMAD EXPLORERS (currently 500K+).",
-                "Unlock ancient treasures with daily quests & traveler challenges.",
-                "Fuel your journey and claim massive weekly reward drops!",
+                "Become part of our influencer circle with an estimated following of over 20 million and growing daily.",
+                "Our members are digital nomads enjoying financial freedom while working anywhere in the world except home.",
+                "Prepare for the upcoming NFT launch. Each NFT grants full access to our villa in Thailand paid for twelve months in advance.",
               ].map((item, i) => (
                 <motion.li
                   key={i}
@@ -166,7 +157,7 @@ export default function Expedition() {
                 src="/website 2.png"
                 alt="Golden Frame"
                 fill
-                className="object-cover m-auto"
+                className="object-cover m-auto hover:scale-[102%]"
               />
             </motion.div>
           </motion.div>
