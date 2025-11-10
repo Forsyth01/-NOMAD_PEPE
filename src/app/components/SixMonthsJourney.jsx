@@ -57,7 +57,7 @@ export default function SixMonthsJourney() {
             <div className="h-px w-12 md:w-24 bg-gradient-to-l from-transparent to-green-500"></div>
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mb-4 ">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl text-white mb-4 font-bold">
             Six Months on the Road
           </h2>
           <p className="text-xl md:text-2xl text-green-400">
@@ -82,21 +82,21 @@ export default function SixMonthsJourney() {
                 
                 <div className="space-y-5 text-gray-300 leading-relaxed text-lg">
                   <p className="text-xl">
-                    <span className="text-green-400 ">Our ride with nomad and Abbosi</span>, six months on the road from <span className="text-white ">Thailand to Dubai</span>. 🏍️
+                    <span className="text-green-400 ">Our ride with nomad and Abbosi</span>, six months on the road from <span className="text-white font-medium">Thailand to Dubai</span>. 🏍️
                   </p>
                   <p className="text-lg">
-                    Get ready for the <span className="text-green-400">live streams</span>, the <span className="text-white ">"Do Good Deeds,"</span> and countless lives we'll cross and impact along the way. 💫
+                    Get ready for the <span className="text-green-400">live streams</span>, the <span className="text-white font-medium">"Do Good Deeds,"</span> and countless lives we'll cross and impact along the way. 💫
                   </p>
                 </div>
 
                 {/* Stats/Features */}
                 <div className="grid grid-cols-2 gap-4 pt-4">
                   <div className="bg-green-900/10 p-4 rounded-xl border border-green-500/20">
-                    <div className="text-3xl  text-green-400 mb-1">6</div>
+                    <div className="text-3xl font-bold text-green-400 mb-1">6</div>
                     <div className="text-sm text-gray-400">Months Journey</div>
                   </div>
                   <div className="bg-green-900/10 p-4 rounded-xl border border-green-500/20">
-                    <div className="text-3xl  text-green-400 mb-1">∞</div>
+                    <div className="text-3xl font-bold text-green-400 mb-1">∞</div>
                     <div className="text-sm text-gray-400">Lives Impacted</div>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ export default function SixMonthsJourney() {
                       <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                       <div className="absolute inset-0 w-3 h-3 bg-green-400 rounded-full animate-ping"></div>
                     </div>
-                    <span className="text-green-400 text-lg">Journey in Progress</span>
+                    <span className="text-green-400 font-medium text-lg">Journey in Progress</span>
                   </div>
                 </div>
               </div>
@@ -122,7 +122,6 @@ export default function SixMonthsJourney() {
                       className="w-full h-full"
                       frameBorder="0"
                       scrolling="no"
-                      allowTransparency="true"
                       allow="encrypted-media"
                       title="Mr. Abbosi Journey Video"
                     ></iframe>
@@ -142,7 +141,7 @@ export default function SixMonthsJourney() {
             <p className="text-xl md:text-2xl text-gray-300 mb-2">
               Follow along as we redefine what it means to
             </p>
-            <p className="text-3xl md:text-4xl text-green-400">
+            <p className="text-3xl md:text-4xl text-green-400 font-bold">
               Travel with Purpose
             </p>
           </div>
