@@ -68,8 +68,70 @@ export default function HowToBuy() {
             className="object-contain w-[437px] h-[507px sm:w-[400px] lg:w-[600px] xl:w-[880px] lg:relative right-20"
             quality={90}
           />
+          
+          {/* Store Buttons - Below image on mobile, visible on mobile only */}
+          <div className="flex flex-col items-center gap-3 mt-6 lg:hidden">
+            <p className="text-white text-lg font-semibold">Get Phantom Wallet</p>
+            <div className="flex gap-4">
+              <a 
+                href="https://play.google.com/store/apps/details?id=app.phantom" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+                  alt="Get it on Google Play" 
+                  className="h-12"
+                />
+              </a>
+              <a 
+                href="https://apps.apple.com/app/phantom-solana-wallet/id1598432977" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-105"
+              >
+                <img 
+                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+                  alt="Download on the App Store" 
+                  className="h-12"
+                />
+              </a>
+            </div>
+          </div>
         </motion.div>
       </section>
+
+      {/* Store Buttons - Bottom middle on desktop */}
+      <div className="hidden lg:flex flex-col items-center gap-3 pb-6">
+        <p className="text-white text-xl">Get Phantom Wallet</p>
+        <div className="flex gap-4">
+          <a 
+            href="https://play.google.com/store/apps/details?id=app.phantom" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="transition-transform hover:scale-105"
+          >
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+              alt="Get it on Google Play" 
+              className="h-14"
+            />
+          </a>
+          <a 
+            href="https://apps.apple.com/app/phantom-solana-wallet/id1598432977" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="transition-transform hover:scale-105"
+          >
+            <img 
+              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
+              alt="Download on the App Store" 
+              className="h-14"
+            />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
