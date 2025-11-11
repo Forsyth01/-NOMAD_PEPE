@@ -35,6 +35,7 @@ export default function NomadJourney() {
   return (
     <section
       ref={ref}
+      id="nomad-journey"
       className="relative py-24 px-6 md:px-12 lg:px-20 overflow-hidden"
       style={{ backgroundColor: "#242B24" }}
     >
