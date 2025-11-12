@@ -112,25 +112,6 @@ export default function Expedition() {
               ))}
             </ul>
 
-            {/* CTA Button */}
-            <motion.button
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 1, duration: 0.6 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="mt-8 w-fit"
-            >
-              <div className="relative group">
-                <div className="">
-                  <img
-                    src="/launchthenomad.png"
-                    alt=""
-                    className="h-20 object-cover"
-                  />
-                </div>
-              </div>
-            </motion.button>
           </motion.div>
 
           {/* Right: Image Frame - Reduced Size */}

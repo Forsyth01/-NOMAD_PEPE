@@ -21,7 +21,7 @@ export default function Navigation() {
     { label: "Why $Nomad", href: "#why $nomad" },
     { label: "The Nomad Journey", href: "#nomad-journey" },
     { label: "Tapped In Academy", href: "#tapped-in-academy" },
-    { label: "Events", href: "#events" },
+    { label: "Events", href: "#luxury-villa" },
   ];
   
   const socialIcons = [

@@ -98,7 +98,7 @@ export default function TappedInCollab() {
         {/* Video + Offer Side by Side */}
         <div className="grid lg:grid-cols-5 gap-8 mb-16">
           {/* Video - Takes up 3 columns */}
-          <motion.div variants={itemVariants} className="lg:col-span-3">
+          <motion.div variants={itemVariants} className="lg:col-span-5">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-green-600 via-emerald-500 to-green-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
               <div className="relative aspect-video bg-black rounded-2xl overflow-hidden border-2 border-green-500/30">
@@ -113,32 +113,6 @@ export default function TappedInCollab() {
             </div>
           </motion.div>
 
-          {/* Offer Card - Takes up 2 columns */}
-          <motion.div variants={itemVariants} className="lg:col-span-2">
-            <div className="h-full bg-gradient-to-br from-green-900/40 via-green-900/20 to-transparent p-8 rounded-2xl border-2 border-green-500/30 flex flex-col justify-center">
-              <div className="text-center">
-                <div className="mb-6">
-                  <div className="text-7xl  text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-emerald-500 lucky">
-                    50%
-                  </div>
-                  <div className="text-3xl text-white -mt-2">OFF</div>
-                </div>
-
-                <div className="space-y-3">
-                  <p className="text-2xl text-white ">Live Trading Sessions</p>
-                  <div className="flex items-center justify-center gap-3">
-                    <span className="text-4xl font-bold text-green-400">
-                      $50
-                    </span>
-                    <span className="text-gray-500 text-2xl line-through">
-                      $100
-                    </span>
-                  </div>
-                  <p className="text-gray-400 text-sm">per month</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
 
         {/* Intro Text */}
