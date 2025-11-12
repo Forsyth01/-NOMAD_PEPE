@@ -111,9 +111,9 @@ export default function PresaleSection() {
 
               {/* Wallet Address - Highlighted */}
               <div className="bg-gradient-to-r from-green-500/10 via-emerald-500/10 to-green-500/10 rounded-2xl p-6 border-2 border-green-500/30 mb-8">
-                <div className="flex items-center justify-between mb-4">
+                <div className="lg:flex items-center justify-between mb-4 space-y-2 lg:space-y-0">
                   <h3 className="text-white text-lg ">Presale Wallet Address</h3>
-                  <div className="flex items-center gap-2 text-xs text-green-400 bg-green-500/20 px-3 py-1.5 rounded-full border border-green-500/40">
+                  <div className="flex items-center gap-2 text-xs text-green-400 bg-green-500/20 px-3 py-1.5 rounded-full border border-green-500/40 w-fit">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                     </svg>
@@ -123,13 +123,13 @@ export default function PresaleSection() {
                 
                 <div className="relative group">
                   <div className="bg-black/80 rounded-xl p-4 border border-green-500/20 hover:border-green-500/40 transition-all">
-                    <div className="flex items-center gap-3">
+                    <div className="lg:flex items-center gap-3">
                       <code className="text-gray-200 text-sm md:text-base flex-1 break-all font-mono tracking-tight">
                         {walletAddress}
                       </code>
                       <button
                         onClick={copyToClipboard}
-                        className="shrink-0 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-6 py-3 rounded-lg transition-all font-medium shadow-lg hover:shadow-green-500/25 hover:scale-105 transform"
+                        className="shrink-0 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-6 lg:py-3 py-2 rounded-lg transition-all font-medium shadow-lg hover:shadow-green-500/25 hover:scale-105 transform my-4 lg:my-0"
                       >
                         {copied ? (
                           <span className="flex items-center gap-2">
