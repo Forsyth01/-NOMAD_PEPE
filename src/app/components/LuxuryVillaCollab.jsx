@@ -138,27 +138,19 @@ export default function LuxuryVillaCollab() {
             <div className="bg-black/40 rounded-2xl p-8 border border-green-500/10 hover:border-green-500/30 transition-all backdrop-blur group">
               <h3 className="text-xl text-white mb-3 font-normal">Global Community</h3>
               <p className="text-gray-300 font-normal">
-                Connect with hundreds of travel & crypto influencers worldwide.
+                Hundreds of travel & crypto influencers are already on board… are you ready to join the movement?
               </p>
             </div>
           </motion.div>
         </div>
 
         {/* Benefits Ribbon */}
-        <motion.div variants={itemVariants} className="mb-16">
+        <motion.div variants={itemVariants} className="">
           <div className="bg-black/40 rounded-3xl p-8 border border-green-500/10 backdrop-blur">
-            <div className="grid md:grid-cols-4 gap-8">
-              {[
-                { title: "Yacht Parties", desc: "Luxury yacht events" },
-                { title: "Club Nights", desc: "VIP nightlife access" },
-                { title: "Travel Events", desc: "Global crypto meetups" },
-                { title: "VIP Access", desc: "Exclusive experiences" },
-              ].map((item, index) => (
-                <div key={index} className="text-center group cursor-pointer">
-                  <h4 className="text-white text-lg mb-2 font-normal">{item.title}</h4>
-                  <p className="text-gray-400 text-sm font-normal">{item.desc}</p>
-                </div>
-              ))}
+            <div className="">
+              <h1 className="xl:text-3xl text-xl text-center">
+                Hold $NOMAD → Unlock access to luxury travel, unforgettable events, and a community that spans the globe.
+              </h1>
             </div>
           </div>
         </motion.div>
