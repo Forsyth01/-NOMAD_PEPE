@@ -102,21 +102,7 @@ export default function LuxuryVillaCollab() {
           </div>
         </motion.div>
 
-        {/* Stats Cards Below Video */}
-        <motion.div variants={itemVariants} className="flex flex-wrap justify-center gap-4 mb-20">
-          <div className="">
-            <div className="text-3xl font-bold">1 Year</div>
-            <div className="text-sm opacity-90">Villa Access</div>
-          </div>
-          <div className="">
-            <div className="text-3xl font-bold text-green-400">Free</div>
-            <div className="text-sm text-gray-300">For Holders</div>
-          </div>
-          <div className="">
-            <div className="text-3xl font-bold text-green-400">100+</div>
-            <div className="text-sm text-gray-300">Influencers</div>
-          </div>
-        </motion.div>
+ 
 
         {/* Asymmetric Grid Layout */}
         <div className="grid lg:grid-cols-12 gap-6 mb-20 mt-16">
