@@ -45,12 +45,12 @@ export default function PresaleSection() {
       id="presale"
       ref={ref}
       className="relative py-20 px-6 md:px-12 lg:px-20 overflow-hidden"
-      style={{
-  background: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/bg 4.png') center/cover no-repeat`,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-}}
+//       style={{
+//   background: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/bg 4.png') center/cover no-repeat`,
+//   backgroundSize: "cover",
+//   backgroundPosition: "center",
+//   backgroundRepeat: "no-repeat",
+// }}
     >
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -175,7 +175,7 @@ export default function PresaleSection() {
                   </div>
                   <div className="pt-4">
                     <h4 className="text-white text-base mb-2 font-semibold">Send SOL</h4>
-                    <p className="text-gray-400 text-sm">Transfer SOL from your wallet (min 0.1 SOL)</p>
+                    <p className="text-gray-400 text-sm">Transfer SOL from your wallet (min 1 SOL). <br /> Anything less will be returned</p>
                   </div>
                 </div>
 

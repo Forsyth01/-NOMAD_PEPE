@@ -56,15 +56,15 @@ export default function Home() {
       <Hero />
       <Marquee />
       <HowToBuy/>
+      <PresaleSection/>
       <VideoPlayer/>
       {/* <BuyUsingJupiter/> */}
       <Nomadnomics />
-      <PresaleSection/>
       <ExpeditionSection/>
       <NomadJourney/>
       <SixMonthsJourney/>
-      <TappedInCollab/>
       <LuxuryVillaCollab/>
+      <TappedInCollab/>
       <FaqSection/>
       <NomadBadge/>
       {/* <ParallaxSection /> */}

@@ -124,16 +124,18 @@ export default function LuxuryVillaCollab() {
           <motion.div variants={itemVariants} className="lg:col-span-7">
             <div className="bg-gradient-to-br from-green-500/10 to-emerald-600/10 rounded-3xl p-10 border-2 border-green-500/20 h-full flex flex-col justify-between hover:border-green-500/40 transition-all group">
               <div>
-                <div className="text-6xl mb-6 group-hover:scale-110 transition-transform">🏠</div>
                 <h3 className="text-3xl text-white mb-4 font-normal">Your Luxury Villa Awaits</h3>
                 <p className="text-gray-300 leading-relaxed text-lg font-normal mb-6">
                   We secured a luxury villa for an entire year. Stay for FREE when you hold $NOMAD. Wake up to ocean views, host your friends, or work remotely in paradise.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30">Ocean Views</span>
-                <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30">Private Pool</span>
-                <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30">Premium Location</span>
+                <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30 font-normal">Ocean Views</span>
+                <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30 font-normal">Private Pool</span>
+                <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30 font-normal">4 Bedrooms</span>
+                <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30 font-normal">Electronic Gating</span>
+                <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30 font-normal">Private Community</span>
+                <span className="px-4 py-2 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30 font-normal">Premium Location</span>
               </div>
             </div>
           </motion.div>
@@ -141,7 +143,6 @@ export default function LuxuryVillaCollab() {
           {/* Stacked Cards */}
           <motion.div variants={itemVariants} className="lg:col-span-5 space-y-6">
             <div className="bg-black/40 rounded-2xl p-8 border border-green-500/10 hover:border-green-500/30 transition-all backdrop-blur group">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">🎉</div>
               <h3 className="text-xl text-white mb-3 font-normal">Exclusive Events</h3>
               <p className="text-gray-300 font-normal">
                 Yacht parties, epic club nights, and crypto travel events with influencers.
@@ -149,7 +150,6 @@ export default function LuxuryVillaCollab() {
             </div>
             
             <div className="bg-black/40 rounded-2xl p-8 border border-green-500/10 hover:border-green-500/30 transition-all backdrop-blur group">
-              <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">🌍</div>
               <h3 className="text-xl text-white mb-3 font-normal">Global Community</h3>
               <p className="text-gray-300 font-normal">
                 Connect with hundreds of travel & crypto influencers worldwide.
@@ -163,13 +163,12 @@ export default function LuxuryVillaCollab() {
           <div className="bg-black/40 rounded-3xl p-8 border border-green-500/10 backdrop-blur">
             <div className="grid md:grid-cols-4 gap-8">
               {[
-                { icon: "🛥️", title: "Yacht Parties", desc: "Luxury yacht events" },
-                { icon: "🌙", title: "Club Nights", desc: "VIP nightlife access" },
-                { icon: "✈️", title: "Travel Events", desc: "Global crypto meetups" },
-                { icon: "👑", title: "VIP Access", desc: "Exclusive experiences" },
+                { title: "Yacht Parties", desc: "Luxury yacht events" },
+                { title: "Club Nights", desc: "VIP nightlife access" },
+                { title: "Travel Events", desc: "Global crypto meetups" },
+                { title: "VIP Access", desc: "Exclusive experiences" },
               ].map((item, index) => (
                 <div key={index} className="text-center group cursor-pointer">
-                  <div className="text-5xl mb-4 group-hover:scale-125 transition-transform">{item.icon}</div>
                   <h4 className="text-white text-lg mb-2 font-normal">{item.title}</h4>
                   <p className="text-gray-400 text-sm font-normal">{item.desc}</p>
                 </div>
