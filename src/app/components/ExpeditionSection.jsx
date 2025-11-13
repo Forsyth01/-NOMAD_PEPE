@@ -96,7 +96,7 @@ export default function Expedition() {
               {[
                 "Become part of our influencer circle with an estimated following of over 20 million and growing daily.",
                 "Our members are digital nomads enjoying financial freedom while working anywhere in the world except home.",
-                "Prepare for the upcoming NFT launch. Each NFT grants full access to our villa in Thailand paid for twelve months in advance.",
+                "Every day, new nomads with powerful voices join our movement, expanding the narrative of our community-driven coin and propelling it beyond anything you could imagine.",
               ].map((item, i) => (
                 <motion.li
                   key={i}
