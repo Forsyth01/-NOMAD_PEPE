@@ -84,7 +84,7 @@ export default function Navigation() {
           </motion.a>
 
           {/* Mobile Menu Toggle */}
-          <div className="fixed flex right-2 top-3 justify-end w-full md:hidden ">
+          <div className="fixed flex right-4 top-10 justify-end w-full md:hidden ">
             <motion.button
               className="text-[#0F1C0F] bg-[#99CC33] hover:bg-[#8BC033] rounded-2xl p-2 mr-2 shadow-lg border-2 border-[#0F1C0F]"
               onClick={() => setIsOpen(!isOpen)}

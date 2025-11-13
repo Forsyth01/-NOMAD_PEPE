@@ -12,7 +12,7 @@ export default function Hero() {
         className="block md:hidden absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: 'url("/assets/Frame 70.png")',
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
+          backgroundColor: "rgba(0, 0, 0, 0.9)",
           backgroundBlendMode: "multiply",
           opacity: 0.8,
         }}
@@ -41,10 +41,10 @@ export default function Hero() {
       {/* Centered Content */}
       <div className="relative z-10 w-full h-full flex flex-col md:px-6 md:py-12">
         <div className="max-w-7xl mx-auto h-full w-full">
-          <div className="flex flex-col lg:flex-row justify-between items-center lg:gap-12 h-full">
+          <div className="flex flex-col lg:flex-row justify-between items-center lg:gap-12 h-full ">
             {/* Left Content */}
             <motion.div
-              className="relative z-20 text-center lg:text-left lg:left-10 pt-12 px-4 md:pt-4 lg:pt-0 flex-shrink-0"
+              className="relative z-20 text-center lg:text-left lg:left-10 pt-12 px-4 md:pt-4 lg:pt-0 flex-shrink-0 top-10"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -57,7 +57,7 @@ export default function Hero() {
                   width={900}
                   height={300}
                   quality={90}
-                  className="h-auto w-[240px] sm:w-[280px] md:w-[450px] lg:w-[500px] xl:w-[650px]"
+                  className="h-auto w-[450px] sm:w-[280px] md:w-[450px] lg:w-[500px] xl:w-[650px] relative top-12"
                 />
               </div>
 
