@@ -56,7 +56,7 @@ export default function Home() {
       <Navigation />
       {/* <Hero /> */} 
       <Marquee /> 
-      <HowToBuy/>
+      {/* <HowToBuy/> */}
       <PresaleSection/>
       <VideoPlayer/>
       {/* <BuyUsingJupiter/> */}
