@@ -54,8 +54,8 @@ export default function Home() {
   return (
     <main className="">
       <Navigation />
-      {/* <Hero /> */}
-      <Marquee />
+      {/* <Hero /> */} 
+      <Marquee /> 
       <HowToBuy/>
       <PresaleSection/>
       <VideoPlayer/>
