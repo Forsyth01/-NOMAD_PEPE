@@ -65,8 +65,8 @@ export default function Home() {
       <NomadJourney/>
       <SixMonthsJourney/>
       <LuxuryVillaCollab/>
-      <TappedInCollab/>
       <NomadYachtParties/>
+      <TappedInCollab/>
       <FaqSection/>
       <NomadBadge/>
       {/* <ParallaxSection /> */}
