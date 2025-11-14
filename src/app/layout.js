@@ -18,6 +18,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // ✅ Your actual domain
+  const domain = "https://www.nomadpepe.xyz";
+  const ogImage = `${domain}/nomad-logo.png`;
+
   return (
     <html lang="en" className="overflow-x-hidden">
       <head>
@@ -30,8 +34,8 @@ export default function RootLayout({ children }) {
         />
 
         {/* ✅ Favicon and Icons */}
-        <link rel="icon" href="/assets/hero.png" type="image/png" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/assets/fav.png" />
+        <link rel="icon" href="/nomad-logo.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/nomad-logo.png" />
         <meta name="theme-color" content="#99CC33" />
 
         {/* ✅ Open Graph (for link previews) */}
@@ -40,11 +44,10 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space."
         />
-        <meta
-          property="og:image"
-          content="https://yourdomain.com/assets/hero.png"
-        />
-        <meta property="og:url" content="https://yourdomain.com" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content={domain} />
         <meta property="og:type" content="website" />
 
         {/* ✅ Twitter Card */}
@@ -54,10 +57,7 @@ export default function RootLayout({ children }) {
           name="twitter:description"
           content="Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space."
         />
-        <meta
-          name="twitter:image"
-          content="https://yourdomain.com/assets/hero.png"
-        />
+        <meta name="twitter:image" content={ogImage} />
       </head>
 
       <body
