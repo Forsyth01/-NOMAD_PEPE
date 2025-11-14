@@ -11,17 +11,44 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// ✅ Correct way to define metadata in Next.js App Router
 export const metadata = {
   title: "NOMAD PEPE - The Traveling Frog Meme Coin",
   description:
     "Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space.",
+  metadataBase: new URL("https://www.nomadpepe.xyz"),
+  openGraph: {
+    title: "NOMAD PEPE - The Traveling Frog Meme Coin",
+    description:
+      "Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space.",
+    url: "https://www.nomadpepe.xyz",
+    siteName: "NOMAD PEPE",
+    images: [
+      {
+        url: "/nomad-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "NOMAD PEPE Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NOMAD PEPE - The Traveling Frog Meme Coin",
+    description:
+      "Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space.",
+    site: "@nomadcoinhq",
+    images: ["/nomad-logo.png"],
+  },
+  icons: {
+    icon: "/nomad-logo.png",
+    apple: "/nomad-logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
-  // ✅ Your actual domain
-  const domain = "https://www.nomadpepe.xyz";
-  const ogImage = `${domain}/nomad-logo.png`;
-
   return (
     <html lang="en" className="overflow-x-hidden">
       <head>
@@ -32,36 +59,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Luckiest+Guy&display=swap"
           rel="stylesheet"
         />
-
-        {/* ✅ Favicon and Icons */}
-        <link rel="icon" href="/nomad-logo.png" type="image/png" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/nomad-logo.png" />
         <meta name="theme-color" content="#99CC33" />
-
-        {/* ✅ Open Graph (for link previews) */}
-        <meta property="og:title" content="NOMAD PEPE - The Traveling Frog Meme Coin" />
-        <meta property="og:site_name" content="NOMAD PEPE" />
-        <meta
-          property="og:description"
-          content="Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space."
-        />
-        <meta property="og:image" content={ogImage} />
-        <meta property="og:image:secure_url" content={ogImage} />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="NOMAD PEPE Logo" />
-        <meta property="og:url" content={domain} />
-        <meta property="og:type" content="website" />
-
-        {/* ✅ Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="NOMAD PEPE - The Traveling Frog Meme Coin" />
-        <meta
-          name="twitter:description"
-          content="Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space."
-        />
-        <meta name="twitter:image" content={ogImage} />
       </head>
 
       <body
