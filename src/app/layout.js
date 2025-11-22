@@ -12,19 +12,25 @@ const geistMono = Geist_Mono({
 });
 
 // ──────────────────────────────────────────────────────────────
-// Site Configuration
+// Site Configuration (FIXED STRUCTURE BASED ON BUKKA ISLAND)
 // ──────────────────────────────────────────────────────────────
 const SITE_URL = "https://www.nomadpepe.xyz";
-const OG_IMAGE = `${SITE_URL}/pfp.jpg`; // UPDATED TO JPG
+const OG_IMAGE = `${SITE_URL}/pfp.jpg`; // FIXED — USE JPG
 
-// ──────────────────────────────────────────────────────────────
-// Next.js Metadata
-// ──────────────────────────────────────────────────────────────
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: "NOMAD PEPE - The Traveling Frog Meme Coin",
   description:
     "Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space.",
+  keywords: [
+    "meme coin",
+    "crypto",
+    "frog meme",
+    "nomad pepe",
+    "pepe token",
+    "web3",
+  ],
+  authors: [{ name: "NomadPepe Team" }],
 
   openGraph: {
     title: "NOMAD PEPE - The Traveling Frog Meme Coin",
@@ -34,10 +40,10 @@ export const metadata = {
     siteName: "NOMAD PEPE",
     images: [
       {
-        url: OG_IMAGE, // UPDATED TO JPG
+        url: OG_IMAGE, // FIXED
         width: 1200,
         height: 630,
-        alt: "NOMAD PEPE - Traveling Frog Meme Coin",
+        alt: "Nomad Pepe Meme Coin",
       },
     ],
     locale: "en_US",
@@ -49,19 +55,17 @@ export const metadata = {
     title: "NOMAD PEPE - The Traveling Frog Meme Coin",
     description:
       "Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space.",
-    site: "@nomadcoinhq",
-    creator: "@nomadcoinhq",
-    images: [OG_IMAGE], // UPDATED TO JPG
+    images: [OG_IMAGE], // FIXED
   },
 
   icons: {
-    icon: "/pfp.jpg",   // UPDATED TO JPG
-    apple: "/pfp.jpg",  // UPDATED TO JPG
+    icon: "/pfp.jpg",   // FIXED
+    apple: "/pfp.jpg",  // FIXED
   },
 };
 
 // ──────────────────────────────────────────────────────────────
-// Root Layout
+// Root Layout (MATCHES WORKING BUKKA STRUCTURE)
 // ──────────────────────────────────────────────────────────────
 export default function RootLayout({ children }) {
   return (
@@ -69,10 +73,10 @@ export default function RootLayout({ children }) {
       <head>
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
+        <link 
+          rel="preconnect" 
+          href="https://fonts.gstatic.com" 
+          crossOrigin="anonymous" 
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Luckiest+Guy&display=swap"
@@ -80,11 +84,9 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}>
         {children}
       </body>
     </html>
   );
-            }
+}
