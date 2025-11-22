@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
 // Site Configuration
 // ──────────────────────────────────────────────────────────────
 const SITE_URL = "https://www.nomadpepe.xyz";
-const OG_IMAGE = `${SITE_URL}/nomad-logo.png`;
+const OG_IMAGE = `${SITE_URL}/pfp.jpg`; // UPDATED TO JPG
 
 // ──────────────────────────────────────────────────────────────
-// Next.js Metadata (This is all you need!)
+// Next.js Metadata
 // ──────────────────────────────────────────────────────────────
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -34,7 +34,7 @@ export const metadata = {
     siteName: "NOMAD PEPE",
     images: [
       {
-        url: OG_IMAGE,
+        url: OG_IMAGE, // UPDATED TO JPG
         width: 1200,
         height: 630,
         alt: "NOMAD PEPE - Traveling Frog Meme Coin",
@@ -51,17 +51,17 @@ export const metadata = {
       "Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space.",
     site: "@nomadcoinhq",
     creator: "@nomadcoinhq",
-    images: [OG_IMAGE],
+    images: [OG_IMAGE], // UPDATED TO JPG
   },
 
   icons: {
-    icon: "/nomad-logo.png",
-    apple: "/nomad-logo.png",
+    icon: "/pfp.jpg",   // UPDATED TO JPG
+    apple: "/pfp.jpg",  // UPDATED TO JPG
   },
 };
 
 // ──────────────────────────────────────────────────────────────
-// Root Layout (Clean, no duplicate meta tags)
+// Root Layout
 // ──────────────────────────────────────────────────────────────
 export default function RootLayout({ children }) {
   return (
@@ -69,7 +69,11 @@ export default function RootLayout({ children }) {
       <head>
         {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Luckiest+Guy&display=swap"
           rel="stylesheet"
@@ -83,4 +87,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
+            }
