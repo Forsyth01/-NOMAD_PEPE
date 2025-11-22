@@ -5,7 +5,7 @@ import { Copy, Check } from "lucide-react";
 
 export default function Nomadnomics() {
   const [copied, setCopied] = useState(false);
-  const contractAddress = "COMING SOON";
+  const contractAddress = "4zYUqr9fQMmrEUXxndVfmUzwJY7bGsroc141xYmAiE2i";
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
