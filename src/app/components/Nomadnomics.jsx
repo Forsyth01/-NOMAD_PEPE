@@ -130,8 +130,7 @@ export default function Nomadnomics() {
               variants={itemVariants}
               className="mb-6 sm:mb-8"
             >
-              <h3 className="text-[#ffffff] text-sm md:text-center sm:text-base md:text-lg mb-3 uppercase tracking-wide lg:text-left">
-Public marketing wallet
+              <h3 className="text-[#ffffff] text-sm md:text-center sm:text-base md:text-lg mb-3 uppercase tracking-wide lg:text-left">Contract address 
               </h3>
 
               {/* Contract box */}
