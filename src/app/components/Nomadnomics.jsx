@@ -137,7 +137,7 @@ Public marketing wallet
               {/* Contract box */}
               <div className="w-full max-w-md lg:max-w-2xl mx-auto lg:mx-0 ">
                 <div className="bg-[#1a3a35]/50 border-2 border-[#ACC578] rounded-xl p-3 sm:p-4 flex flex-row sm:flex-row flex wrap items-center justify-center gap-3 w-full">
-                  <p className="text-[#e5eed2] text-2xl font-bold tracking-wider text-center flex-1">
+                  <p className="text-[#e5eed2] text-2xl sm:text-3xl md:text-4xl font-bold tracking-wider text-center flex-1">
                     {contractAddress}
                   </p>
                 </div>
