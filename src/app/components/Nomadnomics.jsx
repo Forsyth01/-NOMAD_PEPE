@@ -121,7 +121,7 @@ export default function Nomadnomics() {
                 <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-[#6b8d26] rounded-full"></div>
               </div>
               <p className="text-[#e5eed2] text-base text-left md:text-center sm:text-lg md:text-xl ">
-                BUY/SELL TAX: 0%
+                BUY/SELL TAX: 2%
               </p>
             </motion.div>
 
