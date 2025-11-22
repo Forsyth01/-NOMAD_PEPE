@@ -175,7 +175,8 @@ export default function PresaleSection() {
                   </div>
                   <div className="pt-4">
                     <h4 className="text-white text-base mb-2 font-semibold">Send SOL</h4>
-                    <p className="text-gray-400 text-sm">Transfer SOL from your wallet (min 1 SOL). <br /> Anything less will be returned</p>
+                    <p className="text-gray-400 text-sm">Please send only from a non-custodial wallet (e.g., Phantom).
+Do NOT send from centralized exchanges like Coinbase or Binance, as the transaction will not work properly</p>
                   </div>
                 </div>
 
