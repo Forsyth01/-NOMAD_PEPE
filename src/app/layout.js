@@ -19,9 +19,9 @@ const OG_IMAGE = `${SITE_URL}/pfp.jpg`; // MUST BE ABSOLUTE FOR TELEGRAM
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "NOMAD PEPE - The Traveling Frog Meme Coin",
+  title: "NOMAD PEPE – The journey starts here.",
   description:
-    "Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space.",
+    "Join the most adventurous frog in crypto for rewards and meme fun!",
   keywords: [
     "meme coin",
     "crypto",
@@ -32,9 +32,9 @@ export const metadata = {
   ],
 
   openGraph: {
-    title: "NOMAD PEPE - The Traveling Frog Meme Coin",
+    title: "NOMAD PEPE – The journey starts here.",
     description:
-      "Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space.",
+      "Join the most adventurous frog in crypto for rewards and meme fun!",
     url: SITE_URL,
     siteName: "NOMAD PEPE",
     images: [
@@ -52,9 +52,9 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "NOMAD PEPE - The Traveling Frog Meme Coin",
+    title: "NOMAD PEPE – The journey starts here.",
     description:
-      "Join NOMAD PEPE on his epic journey across the crypto universe! The most based traveling frog in the meme coin space.",
+      "Join the most adventurous frog in crypto for rewards and meme fun!",
     image: OG_IMAGE,
     images: [OG_IMAGE],
   },
